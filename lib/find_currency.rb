@@ -6,10 +6,13 @@ end
 
 # 指定された国の通貨を大文字にいて返す
 def show_currency(country)
-	currency = find_currency(country)
+	# 変数への代入自体が戻り値を持つため、if文の中で直接代入できる
 	# nilでないことをチェックする（nilだとupcaseが呼び出せないため）
-	if currency
-		currency.upcase
+	# if currency = find_currency(country)
+	# 	currency.upcase
+	currency = find_currency(country)
+	# currencyがnilの場合を考慮して、&.演算子でメソッドを呼び出す
+	currency&.upcase
 	end
 end
 
