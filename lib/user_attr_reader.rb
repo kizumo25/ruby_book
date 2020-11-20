@@ -12,3 +12,5 @@ user.name
 
 # @name を変更しようとするとエラーになる
 user.name = 'Bob'
+
+
