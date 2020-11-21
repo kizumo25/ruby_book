@@ -12,5 +12,3 @@ user.name = 'Bob'
 
 # @nameの参照はできない
 user.name #=> Error
-
-
